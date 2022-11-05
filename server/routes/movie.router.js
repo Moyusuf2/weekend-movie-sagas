@@ -16,6 +16,24 @@ router.get('/', (req, res) => {
 
 });
 
+router.get('/:id',(req,res) =>{
+  const sql = `
+  SELECT * 
+  FROM "genres"
+  JOIN "movies_genres" 
+    ON "genres".id = "movies_genres".genre_id
+  WHERE "movies_genres".movie_id = $1
+  `;
+  pool
+      .query(sql, [req.params.id])
+      .then((dbRes) =>{
+        res.send(dbRes.rows)
+      })
+      .catch((error) =>{
+        console.log('error in /GET id',error)
+      })
+})
+
 router.post('/', (req, res) => {
   console.log(req.body);
   // RETURNING "id" will give us back the id of the created movie
