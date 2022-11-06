@@ -2,6 +2,8 @@ import { useHistory, useParams } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { useEffect } from "react";
 import { useSelector } from "react-redux";
+import './MovieDetails.css';
+
 function MovieDetails() {
   console.log("in detail");
   const history = useHistory();
@@ -27,18 +29,19 @@ function MovieDetails() {
   };
 
   return (
-    <>
+    <div className="container">
       <nav>
-        <button onClick={handleClick}>Back to movie list</button>
+        <button className="backBtn" onClick={handleClick}>Back to movie list</button>
       </nav>
 
       <h2>{movie.title}</h2>
       <img src={movie.poster} alt={movie.title} />
       {genre.map(genre => (
-        <p key={genre.genre}>{genre.genre}</p>
+        <p key={genre.genre} className="genre">{genre.genre}</p>
       ))}
-      <p>{movie.description}</p>
-    </>
+      <br />
+      <p className="description">{movie.description}</p>
+    </div>
   );
 }
 
