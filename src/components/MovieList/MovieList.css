@@ -4,4 +4,16 @@
     padding: 15px;
 }
 
+h2{
+    padding: 10px,
+}
+
+.card{
+    margin: 20px;
+    overflow: hidden;
+    box-shadow: 0 5px 10px rgba( #000, .8 );
+    transform-origin:center top;
+    transform-style: preserve-3d;
+    transform:translateZ( 0 ),
+}
 
