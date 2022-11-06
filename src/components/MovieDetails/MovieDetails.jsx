@@ -30,17 +30,16 @@ function MovieDetails() {
 
   return (
     <div className="container">
-      <nav>
-        <button className="backBtn" onClick={handleClick}>Back to movie list</button>
-      </nav>
-
+        <div className="card">
       <h2>{movie.title}</h2>
-      <img src={movie.poster} alt={movie.title} />
       {genre.map(genre => (
         <p key={genre.genre} className="genre">{genre.genre}</p>
       ))}
+      <img src={movie.poster} alt={movie.title} />
       <br />
       <p className="description">{movie.description}</p>
+      <button className="backBtn" onClick={handleClick}>Back to movie list</button>
+      </div>
     </div>
   );
 }
