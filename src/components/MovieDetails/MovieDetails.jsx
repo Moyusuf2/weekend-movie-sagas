@@ -17,13 +17,15 @@ function MovieDetails() {
     });
   }, [params.mohamed]);
 
+  //get movies from store and loop to get movie that is the same as 
   const movie = useSelector((store) =>
     store.movies.find((movie) => movie.id == params.mohamed)
   );
+  // genre reducer to get genre of selected movie
   const genre = useSelector((store) => store.genres);
 
   console.log("genre is:", genre);
-
+  //when button is clicked, user is taken back to homepage/movie list
   const handleClick = () => {
     history.push("/");
   };

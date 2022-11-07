@@ -30,11 +30,5 @@ body {
   background-color: #24282f;
   color: white;
 }
-body {
-  background: linear-gradient(rgba(30, 27, 38, 0.95), rgba(30, 27, 38, 0.95)),
-    url();
-  background-position: center;
-  background-size: cover;
-  background-repeat: repeat;
-}
+
 

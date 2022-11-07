@@ -9,6 +9,7 @@ function MovieList() {
     const movies = useSelector(store => store.movies);
     const history = useHistory()
 
+    //on load get movies from database
     useEffect(() => {
         dispatch({ type: 'FETCH_MOVIES' });
     }, []);
@@ -20,6 +21,7 @@ function MovieList() {
                     return (
                         <div key={movie.id} className="card">
                             <h3>{movie.title}</h3>
+                            {/* on image click, user is taken to movie detail page */}
                             <img className='poster' src={movie.poster} alt={movie.title} onClick={() => history.push(`/${movie.id}`)} />
 
 
