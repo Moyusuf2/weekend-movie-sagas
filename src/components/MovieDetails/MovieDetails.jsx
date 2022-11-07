@@ -32,7 +32,7 @@ function MovieDetails() {
 
   return (
     <div className="container">
-        <div className="card">
+        <div className="cardDetail">
       <h2>{movie.title}</h2>
       {genre.map(genre => (
         <p key={genre.genre} className="genre">{genre.genre}</p>

@@ -31,7 +31,7 @@ This project has a collection of movies fetched from database. Once a movie is s
 
 ## usage
 
-1. Browse through the gallery of some great documentary films
+1. Browse through the gallery of some great films
 2. When you find one that interests you, click the thumbnail image to see additional information
 3. Click the return button to navigate back to the home page
 
