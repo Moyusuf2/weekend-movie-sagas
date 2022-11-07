@@ -7,12 +7,14 @@ function App() {
   return (
     <div className="App">
       <h1>The Movies Saga!</h1>
-      <Router>        
+      <Router> 
+               {/* homepage */}
         <Route path="/" exact>
           <MovieList />
         </Route>
         
         {/* Details page */}
+        {/* change path of link based on movie clicked */}
         <Route path="/:mohamed" exact>
           <MovieDetails />
         </Route>
