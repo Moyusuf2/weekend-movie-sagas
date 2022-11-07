@@ -60,7 +60,7 @@ img {
   display: inline-block;
   overflow: hidden;
   position: relative;
-  width: 100%;
+  width: 890px;
 }
 
 .genre {
@@ -79,4 +79,5 @@ img {
 
 .description {
   display: flex;
+  margin: 20px;
 }

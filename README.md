@@ -45,6 +45,6 @@ This project has a collection of movies fetched from the database. Once movie is
 
 ## Acknowledgement
 
-Many thanks to the following: Prime Digital Academy and my Ramirez Cohort!
-
-* Prime Digital Academy for helping make my software engineering dreams come true [https://www.primeacademy.io/]
+Many thanks to the following: 
+* Prime Digital Academy [https://www.primeacademy.io/]
+* my Ramirez Cohort!
