@@ -2,7 +2,7 @@
 
 
 ## Description
-This project has a collection of movies fetched from the database. Once movie is selected it takes you to detail movie where you can see the movie description and genre.
+This project has a collection of movies fetched from database. Once a movie is selected it takes users to a new page that provides further information about selected movie such as movie genre and movie summary/description.
 
 
 ### Prerequisites
