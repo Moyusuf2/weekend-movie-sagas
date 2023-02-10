@@ -60,7 +60,7 @@ img {
   display: inline-block;
   overflow: hidden;
   position: relative;
-  width: 890px;
+  width: 100%;
 }
 
 .genre {
@@ -80,6 +80,7 @@ img {
 .description {
   display: flex;
   margin: 20px;
+  
 }
 
 .cardDetail{

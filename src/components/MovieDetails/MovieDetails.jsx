@@ -24,6 +24,8 @@ function MovieDetails() {
   // genre reducer to get genre of selected movie
   const genre = useSelector((store) => store.genres);
 
+
+  
   console.log("genre is:", genre);
   //when button is clicked, user is taken back to homepage/movie list
   const handleClick = () => {
@@ -34,9 +36,11 @@ function MovieDetails() {
     <div className="container">
         <div className="cardDetail">
       <h2>{movie.title}</h2>
+      <div className="genre-row">
       {genre.map(genre => (
         <p key={genre.genre} className="genre">{genre.genre}</p>
       ))}
+      </div>
       <img src={movie.poster} alt={movie.title} />
       <br />
       <p className="description">{movie.description}</p>
